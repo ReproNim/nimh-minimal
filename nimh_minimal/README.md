@@ -12,6 +12,8 @@
       <br>
 <section>
 
-# Welcome to nimh-minimal
+# Welcome to NIMH Required Data Elements Collection 
 
-minimal list of data collection instruments that would be ideal for use by all mental health researchers conducting clinical research to facilitate and harmonize mental health data collection.
+Minimal list of data collection instruments that would be ideal for use by all mental 
+health researchers conducting clinical research to facilitate and harmonize mental health 
+data collection.
