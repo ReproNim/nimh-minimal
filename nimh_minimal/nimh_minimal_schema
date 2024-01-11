@@ -4,7 +4,7 @@
         {
             "activity_path": "https://raw.githubusercontent.com/ReproNim/reproschema-library/2eab8e3b7057bdc12ccfe64a186bfbf5f0fcd80f/activities/"
         }
-        ]
+        ],
     "@type": "reproschema:Protocol",
     "@id": "nimh_minimal_schema",
     "prefLabel": "NIMH collection",
