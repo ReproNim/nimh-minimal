@@ -1,0 +1,81 @@
+name: Continuous Integration and Deployment of nimh-minimal
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Set Environment Variable
+      run: |
+        echo "PROTOCOL_SLUG=nimh_minimal" >> $GITHUB_ENV
+    
+    - name: Echo Environment Variable
+      run: |
+        echo "PROTOCOL_SLUG is set to $PROTOCOL_SLUG"    
+    
+    - name: Check out repository
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0  # Fetches the entire history for comprehensive CI checks
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14.x' # Updated to a more recent LTS version
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9' # Updated to Python 3.9
+
+    - name: Install system dependencies
+      run: sudo apt-get install jq
+
+    - name: Read Checksum from config.env
+      run: |
+        echo "Reading checksum..."
+        CHECKSUM=$(cat config.env | grep REPROSCHEMA_UI_CHECKSUM | cut -d '=' -f2)
+        echo "LATEST_COMMIT_HASH=${CHECKSUM}" >> $GITHUB_ENV
+
+    - name: Install Node dependencies and validate JSON
+      run: |
+        npm install -g jsonlint
+        grep -r "@context" activities | cut -d: -f1 | xargs -I {} jsonlint -q {}
+        grep -r "@context" $PROTOCOL_SLUG | cut -d: -f1 | xargs -I {} jsonlint -q {}
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip setuptools
+        pip install reproschema requests_cache pre-commit
+    
+    - name: Test with pyshacl
+      run: |
+        reproschema -l DEBUG validate activities
+        reproschema -l DEBUG validate ${PROTOCOL_SLUG}/${PROTOCOL_SLUG}_schema
+
+    - name: Build and prepare UI
+      run: |
+        curl -O -sSL https://github.com/ReproNim/reproschema-ui/archive/${LATEST_COMMIT_HASH}.zip
+        unzip ${LATEST_COMMIT_HASH}.zip
+        mv reproschema-ui-* ui
+        cd ui
+        cp -r ../ui-changes/. .
+        # Modify the title in index.html
+        sed -i 's/<title>.*<\/title>/<title>nimh-minimal<\/title>/' public/index.html
+        npm install
+        npm run build
+        touch dist/.nojekyll
+
+    - name: Deploy to GitHub Pages 🚀
+      if: github.ref == 'refs/heads/main'
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        branch: gh-pages
+        folder: ui/dist

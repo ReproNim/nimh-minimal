@@ -1,0 +1,39 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Protocol",
+    "@id": "nimh_minimal_schema",
+    "prefLabel": "nimh_minimal",
+    "description": "minimal list of data collection instruments that would be ideal for use by all mental health researchers conducting clinical research to facilitate and harmonize mental health data collection.",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "landingPage": [
+        {
+            "@id": "README.md",
+            "inLanguage": "en"
+        }
+    ],
+    "messages": [
+        {
+            "message": "Test message: Triggered when item1 value is greater than 0",
+            "jsExpression": "item1 > 0"
+        }
+    ],
+    "ui": {
+        "addProperties": [
+            {
+                "isAbout": "../activities/voiceActivity/voiceActivity_schema",
+                "variableName": "voiceActivity_schema",
+                "prefLabel": {
+                    "en": "Voice Activity"
+                }
+            }
+        ],
+        "order": [
+            "../activities/voiceActivity/voiceActivity_schema"
+        ],
+        "shuffle": false,
+        "allow": [
+            "reproschema:AllowExport"
+        ]
+    }
+}
