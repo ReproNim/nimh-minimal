@@ -1,5 +1,6 @@
 {
-    "@context":         "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
         {
             "activity_path": "https://raw.githubusercontent.com/ReproNim/reproschema-library/2eab8e3b7057bdc12ccfe64a186bfbf5f0fcd80f/activities/"
         }
