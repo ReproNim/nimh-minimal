@@ -1,9 +1,14 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+        {
+            "activity_path": "https://raw.githubusercontent.com/ReproNim/reproschema-library/2eab8e3b7057bdc12ccfe64a186bfbf5f0fcd80f/activities/"
+        }
+        ]
     "@type": "reproschema:Protocol",
     "@id": "nimh_minimal_schema",
     "prefLabel": "nimh_minimal",
-    "description": "minimal list of data collection instruments that would be ideal for use by all mental health researchers conducting clinical research to facilitate and harmonize mental health data collection.",
+    "description": "Minimal list of data collection instruments that would be ideal for use by all mental health researchers conducting clinical research to facilitate and harmonize mental health data collection.",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "landingPage": [
@@ -21,15 +26,15 @@
     "ui": {
         "addProperties": [
             {
-                "isAbout": "../activities/voiceActivity/voiceActivity_schema",
-                "variableName": "voiceActivity_schema",
+                "isAbout": "../activities/demo/demo_schema",
+                "variableName": "demo_schema",
                 "prefLabel": {
-                    "en": "Voice Activity"
+                    "en": "Demographics"
                 }
             }
         ],
         "order": [
-            "../activities/voiceActivity/voiceActivity_schema"
+            "../activities/demo/demo_schema"
         ],
         "shuffle": false,
         "allow": [
