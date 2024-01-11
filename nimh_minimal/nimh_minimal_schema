@@ -7,7 +7,7 @@
         ]
     "@type": "reproschema:Protocol",
     "@id": "nimh_minimal_schema",
-    "prefLabel": "nimh_minimal",
+    "prefLabel": "NIMH collection",
     "description": "Minimal list of data collection instruments that would be ideal for use by all mental health researchers conducting clinical research to facilitate and harmonize mental health data collection.",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
@@ -16,13 +16,7 @@
             "@id": "README.md",
             "inLanguage": "en"
         }
-    ],
-    "messages": [
-        {
-            "message": "Test message: Triggered when item1 value is greater than 0",
-            "jsExpression": "item1 > 0"
-        }
-    ],
+    ]
     "ui": {
         "addProperties": [
             {
@@ -31,10 +25,34 @@
                 "prefLabel": {
                     "en": "Demographics"
                 }
+            },
+	        {
+                "variableName": "PHQ9_schema",
+                "isAbout": "activity_path:PHQ-9/PHQ9_schema",
+                "prefLabel": {
+                    "en": "PHQ9"
+                }
+            },
+	        {
+                "variableName": "GAD7_schema",
+                "isAbout": "activity_path:GAD7/GAD7_schema",
+                "prefLabel": {
+                    "en": "GAD7"
+                }
+            },
+            {
+                "isAbout": "activity_path:ThankYou/ThankYou_schema",
+                "variableName": "ThankYou_schema",
+                "prefLabel": {
+                    "en": "Submit responses"
+                }
             }
         ],
         "order": [
-            "../activities/demo/demo_schema"
+            "../activities/demo/demo_schema",
+            "activity_path:PHQ-9/PHQ9_schema",
+            "activity_path:GAD7/GAD7_schema",
+            "activity_path:ThankYou/ThankYou_schema"
         ],
         "shuffle": false,
         "allow": [
