@@ -27,6 +27,13 @@
                 }
             },
 	        {
+                "variableName": "DSM5A_schema",
+                "isAbout": "activity_path:DSM-5-A/DSM5_crosscutting_adult_schema",
+                "prefLabel": {
+                    "en": "DSM CC"
+                }
+            },
+	        {
                 "variableName": "WHODAS12_schema",
                 "isAbout": "activity_path:WHODAS12/WHODAS12_schema",
                 "prefLabel": {
@@ -57,6 +64,7 @@
         ],
         "order": [
             "../activities/demo/demo_schema",
+            "activity_path:DSM-5-A/DSM5_crosscutting_adult_schema",
             "activity_path:WHODAS12/WHODAS12_schema",
             "activity_path:PHQ-9/PHQ9_schema",
             "activity_path:GAD7/GAD7_schema",
