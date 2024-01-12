@@ -31,8 +31,7 @@
                 "variableName": "DSM5_crosscutting_adult_schema",
                 "prefLabel": {
                     "en": "DSM5 Adult"
-                },
-                "isVis": "interview_age>=216"
+                }
             },
 	        {
                 "variableName": "WHODAS12_schema",
