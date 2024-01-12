@@ -60,7 +60,7 @@
                 "prefLabel": {
                     "en": "DSM5 Parent"
                 },
-                "isVis": "interview_age<216"
+                "isVis": false
             },
             {
                 "isAbout": "activity_path:DSM-5_Y/DSM5_crosscutting_youth_schema",
@@ -68,7 +68,7 @@
                 "prefLabel": {
                     "en": "DSM5 Youth"
                 },
-                "isVis": "interview_age<216"
+                "isVis": false
             },
             {
                 "isAbout": "activity_path:RCADS-25/RCADS-25_schema",
@@ -76,7 +76,7 @@
                 "prefLabel": {
                     "en": "RCADS-25"
                 },
-                "isVis": "interview_age<216"
+                "isVis": false
             },
             {
                 "isAbout": "activity_path:ThankYou/ThankYou_schema",
