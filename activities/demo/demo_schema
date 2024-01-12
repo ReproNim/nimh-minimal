@@ -2,7 +2,7 @@
     "@context": [
         "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
         {
-            "activity_path": "https://raw.githubusercontent.com/ReproNim/reproschema-library/60ac525207bc1cc3d4d10c8ce6d93be9959f08a9/activities/"
+            "demo": "https://raw.githubusercontent.com/ReproNim/reproschema-library/9be140d0297ae0671d50466448ae67dea86d3bfd/activities/NDA/items/"
         }
         ],
     "@type": "reproschema:Activity",
@@ -14,19 +14,18 @@
     "version": "0.0.1",
     "ui": {
         "addProperties": [
-                {"isAbout": "activity_path:NDA/items/interview_age",
-                "variableName": "interview_age",
-                "isVis": true
-                },
-                {"isAbout": "activity_path:NDA/items/sex",
-                "variableName": "sex",
-                "isVis": true
-                }
-
+            {
+                "isAbout": "demo:interview_age",
+                "variableName": "interview_age"
+            },
+            {
+                "isAbout": "demo:sex",
+                "variableName": "sex"
+            }
         ],
         "order": [
-            "activity_path:NDA/items/interview_age",
-            "activity_path:NDA/items/sex"
+            "demo:interview_age",
+            "demo:sex"
         ],
         "shuffle": false,
         "allow": [
