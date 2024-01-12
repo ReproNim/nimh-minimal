@@ -2,7 +2,7 @@
     "@context": [
         "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
         {
-            "activity_path": "https://raw.githubusercontent.com/ReproNim/reproschema-library/2eab8e3b7057bdc12ccfe64a186bfbf5f0fcd80f/activities/"
+            "activity_path": "https://raw.githubusercontent.com/ReproNim/reproschema-library/60ac525207bc1cc3d4d10c8ce6d93be9959f08a9/activities/"
         }
         ],
     "@type": "reproschema:Protocol",
@@ -24,6 +24,13 @@
                 "variableName": "demo_schema",
                 "prefLabel": {
                     "en": "Demographics"
+                }
+            },
+            {
+                "isAbout": "activity_path:DSM-5-A/DSM5_crosscutting_adult_schema",
+                "variableName": "DSM5_crosscutting_adult_schema",
+                "prefLabel": {
+                    "en": "SM5_crosscutting_adult"
                 }
             },
 	        {
@@ -57,6 +64,7 @@
         ],
         "order": [
             "../activities/demo/demo_schema",
+            "activity_path:DSM-5-A/DSM5_crosscutting_adult_schema",
             "activity_path:WHODAS12/WHODAS12_schema",
             "activity_path:PHQ-9/PHQ9_schema",
             "activity_path:GAD7/GAD7_schema",
