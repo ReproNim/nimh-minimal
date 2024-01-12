@@ -2,7 +2,7 @@
     "@context": [
         "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
         {
-            "activity_path": "https://raw.githubusercontent.com/ReproNim/reproschema-library/60ac525207bc1cc3d4d10c8ce6d93be9959f08a9/activities/"
+            "activity_path": "https://raw.githubusercontent.com/ReproNim/reproschema-library/9be140d0297ae0671d50466448ae67dea86d3bfd/activities/"
         }
         ],
     "@type": "reproschema:Protocol",
@@ -24,35 +24,64 @@
                 "variableName": "demo_schema",
                 "prefLabel": {
                     "en": "Demographics"
-                }
+                },
+                "isVis": "True"
             },
-	        {
-                "variableName": "DSM5A_schema",
-                "isAbout": "activity_path:DSM-5-A/DSM5_crosscutting_adult_schema",
+            {
+                "isAbout": "activity_path:DSM-5_A/DSM5_crosscutting_adult_schema",
+                "variableName": "DSM5_crosscutting_adult_schema",
                 "prefLabel": {
-                    "en": "DSM CC"
-                }
+                    "en": "DSM5_crosscutting_adult"
+                },
+                "isVis": "demo_schema: interview_age > = 18"
             },
 	        {
                 "variableName": "WHODAS12_schema",
                 "isAbout": "activity_path:WHODAS12/WHODAS12_schema",
                 "prefLabel": {
                     "en": "WHODAS12"
-                }
+                },
+                "isVis": "demo_schema: interview_age > = 18"
             },
 	        {
                 "variableName": "PHQ9_schema",
                 "isAbout": "activity_path:PHQ-9/PHQ9_schema",
                 "prefLabel": {
                     "en": "PHQ9"
-                }
+                },
+                "isVis": "demo_schema: interview_age > = 18"
             },
 	        {
                 "variableName": "GAD7_schema",
                 "isAbout": "activity_path:GAD7/GAD7_schema",
                 "prefLabel": {
                     "en": "GAD7"
-                }
+                },
+                "isVis": "demo_schema: interview_age > = 18"
+            },
+            {
+                "isAbout": "activity_path:dsm_5_parent_guardian_rated_level_1_crosscutting_s/dsm_5_parent_guardian_rated_level_1_crosscutting_s_schema",
+                "variableName": "dsm_5_parent_guardian_rated_level_1_crosscutting_s_schema",
+                "prefLabel": {
+                    "en": "DSM5_crosscutting_parent"
+                },
+                "isVis": "demo_schema: interview_age < 18"
+            },
+            {
+                "isAbout": "activity_path:DSM-5_Y/DSM5_crosscutting_youth_schema",
+                "variableName": "DSM5_crosscutting_youth_schema",
+                "prefLabel": {
+                    "en": "DSM5_crosscutting_youth"
+                },
+                "isVis": "demo_schema: interview_age < 18"
+            },
+            {
+                "isAbout": "activity_path:RCADS-25/RCADS-25_schema",
+                "variableName": "RCADS-25_schema",
+                "prefLabel": {
+                    "en": "RCADS-25"
+                },
+                "isVis": "demo_schema: interview_age < 18"
             },
             {
                 "isAbout": "activity_path:ThankYou/ThankYou_schema",
@@ -64,10 +93,13 @@
         ],
         "order": [
             "../activities/demo/demo_schema",
-            "activity_path:DSM-5-A/DSM5_crosscutting_adult_schema",
+            "activity_path:DSM-5_A/DSM5_crosscutting_adult_schema",
             "activity_path:WHODAS12/WHODAS12_schema",
             "activity_path:PHQ-9/PHQ9_schema",
             "activity_path:GAD7/GAD7_schema",
+            "activity_path:dsm_5_parent_guardian_rated_level_1_crosscutting_s/dsm_5_parent_guardian_rated_level_1_crosscutting_s_schema",
+            "activity_path:DSM-5_Y/DSM5_crosscutting_youth_schema",
+            "activity_path:RCADS-25/RCADS-25_schema",
             "activity_path:ThankYou/ThankYou_schema"
         ],
         "shuffle": false,

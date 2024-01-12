@@ -16,17 +16,11 @@
         "addProperties": [
                 {"isAbout": "activity_path:NDA/items/interview_age",
                 "variableName": "interview_age",
-                "isVis": true,
-                  "allow": [
-                    "reproschema:Skipped"
-                ]
+                "isVis": true
                 },
                 {"isAbout": "activity_path:NDA/items/sex",
                 "variableName": "sex",
-                "isVis": true,
-                  "allow": [
-                    "reproschema:Skipped"
-                ]
+                "isVis": true
                 }
 
         ],
