@@ -24,8 +24,8 @@
             }
         ],
         "order": [
-            "demo:sex",
-            "demo:interview_age"
+            "demo:interview_age",
+            "demo:sex"
         ],
         "shuffle": false,
         "allow": [

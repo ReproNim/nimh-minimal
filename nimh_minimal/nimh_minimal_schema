@@ -38,24 +38,21 @@
                 "isAbout": "activity_path:WHODAS12/WHODAS12_schema",
                 "prefLabel": {
                     "en": "WHODAS12"
-                },
-                "isVis": "interview_age>=216"
+                }
             },
 	        {
                 "variableName": "PHQ9_schema",
                 "isAbout": "activity_path:PHQ-9/PHQ9_schema",
                 "prefLabel": {
                     "en": "PHQ9"
-                },
-                "isVis": "interview_age>=216"
+                }
             },
 	        {
                 "variableName": "GAD7_schema",
                 "isAbout": "activity_path:GAD7/GAD7_schema",
                 "prefLabel": {
                     "en": "GAD7"
-                },
-                "isVis": "interview_age>=216"
+                }
             },
             {
                 "isAbout": "activity_path:dsm_5_parent_guardian_rated_level_1_crosscutting_s/dsm_5_parent_guardian_rated_level_1_crosscutting_s_schema",
