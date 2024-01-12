@@ -20,11 +20,20 @@
     "ui": {
         "addProperties": [
             {
-                "isAbout": "../activities/demo/demo_schema",
-                "variableName": "demo_schema",
+                "isAbout": "activity_path:NDA/items/interview_age",
+                "variableName": "interview_age",
                 "prefLabel": {
-                    "en": "Demographics"
-                }
+                    "en": "Age"
+                },
+                "isVis": true
+            },
+            {
+                "isAbout": "activity_path:NDA/items/sex",
+                "variableName": "sex",
+                "prefLabel": {
+                    "en": "Sex"
+                },
+                "isVis": true
             },
             {
                 "isAbout": "activity_path:DSM-5_A/DSM5_crosscutting_adult_schema",
@@ -32,7 +41,7 @@
                 "prefLabel": {
                     "en": "DSM5 Adult"
                 },
-		"isVis": "interview_age >= 18"
+                "isVis": "interview_age >= 18"
             },
 	        {
                 "variableName": "WHODAS12_schema",
@@ -40,7 +49,7 @@
                 "prefLabel": {
                     "en": "WHODAS12"
                 },
-		"isVis": "interview_age >= 18"
+                "isVis": "interview_age >= 18"
             },
 	        {
                 "variableName": "PHQ9_schema",
@@ -48,7 +57,7 @@
                 "prefLabel": {
                     "en": "PHQ9"
                 },
-		"isVis": "interview_age >= 18"
+                "isVis": "interview_age >= 18"
             },
 	        {
                 "variableName": "GAD7_schema",
@@ -56,7 +65,7 @@
                 "prefLabel": {
                     "en": "GAD7"
                 },
-		"isVis": "interview_age >= 18"
+                "isVis": "interview_age >= 18"
             },
             {
                 "isAbout": "activity_path:dsm_5_parent_guardian_rated_level_1_crosscutting_s/dsm_5_parent_guardian_rated_level_1_crosscutting_s_schema",
@@ -64,7 +73,7 @@
                 "prefLabel": {
                     "en": "DSM5 Parent"
                 },
-		"isVis": "interview_age < 18"
+                "isVis": "interview_age < 18"
             },
             {
                 "isAbout": "activity_path:DSM-5_Y/DSM5_crosscutting_youth_schema",
@@ -72,7 +81,7 @@
                 "prefLabel": {
                     "en": "DSM5 Youth"
                 },
-		"isVis": "interview_age < 18"
+                "isVis": "interview_age < 18"
             },
             {
                 "isAbout": "activity_path:RCADS-25/RCADS-25_schema",
@@ -80,7 +89,7 @@
                 "prefLabel": {
                     "en": "RCADS-25"
                 },
-		"isVis": "interview_age < 18"
+                "isVis": "interview_age < 18"
             },
             {
                 "isAbout": "activity_path:ThankYou/ThankYou_schema",
@@ -91,7 +100,8 @@
             }
         ],
         "order": [
-            "../activities/demo/demo_schema",
+            "activity_path:NDA/items/interview_age",
+            "activity_path:NDA/items/sex",
             "activity_path:DSM-5_A/DSM5_crosscutting_adult_schema",
             "activity_path:WHODAS12/WHODAS12_schema",
             "activity_path:PHQ-9/PHQ9_schema",
