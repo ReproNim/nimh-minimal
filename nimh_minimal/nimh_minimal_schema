@@ -24,16 +24,14 @@
                 "variableName": "interview_age",
                 "prefLabel": {
                     "en": "Age"
-                },
-                "isVis": true
+                }
             },
             {
                 "isAbout": "activity_path:NDA/items/sex",
                 "variableName": "sex",
                 "prefLabel": {
                     "en": "Sex"
-                },
-                "isVis": true
+                }
             },
             {
                 "isAbout": "activity_path:DSM-5_A/DSM5_crosscutting_adult_schema",
