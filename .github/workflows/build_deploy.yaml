@@ -61,7 +61,7 @@ jobs:
 
     - name: Build and prepare UI
       run: |
-        curl -O -sSL https://github.com/ReproNim/reproschema-ui/archive/${LATEST_COMMIT_HASH}.zip
+        curl -O -sSL https://github.com/yibeichan/reproschema-ui/archive/${LATEST_COMMIT_HASH}.zip
         unzip ${LATEST_COMMIT_HASH}.zip
         mv reproschema-ui-* ui
         cd ui
