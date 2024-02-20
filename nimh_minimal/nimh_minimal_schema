@@ -32,7 +32,7 @@
                 "prefLabel": {
                     "en": "DSM5 Adult"
                 },
-                "isVis": "demo_schema: interview_age > = 200"
+                "isVis": "demo_schema:interview_age > = 200"
             },
 	        {
                 "variableName": "WHODAS12_schema",
@@ -40,7 +40,7 @@
                 "prefLabel": {
                     "en": "WHODAS12"
                 },
-                "isVis": "demo_schema: interview_age > = 200"
+                "isVis": "demo_schema:interview_age > = 200"
             },
 	        {
                 "variableName": "PHQ9_schema",
@@ -48,7 +48,7 @@
                 "prefLabel": {
                     "en": "PHQ9"
                 },
-                "isVis": "demo_schema: interview_age > = 200"
+                "isVis": "demo_schema:interview_age > = 200"
             },
 	        {
                 "variableName": "GAD7_schema",
@@ -56,7 +56,7 @@
                 "prefLabel": {
                     "en": "GAD7"
                 },
-                "isVis": "demo_schema: interview_age > = 200"
+                "isVis": "demo_schema:interview_age > = 200"
             },
             {
                 "isAbout": "activity_path:dsm_5_parent_guardian_rated_level_1_crosscutting_s/dsm_5_parent_guardian_rated_level_1_crosscutting_s_schema",
@@ -64,7 +64,7 @@
                 "prefLabel": {
                     "en": "DSM5 Parent"
                 },
-                "isVis": "demo_schema: interview_age < 200"
+                "isVis": "demo_schema:interview_age < 200"
             },
             {
                 "isAbout": "activity_path:DSM-5_Y/DSM5_crosscutting_youth_schema",
@@ -72,7 +72,7 @@
                 "prefLabel": {
                     "en": "DSM5 Youth"
                 },
-                "isVis": "demo_schema: interview_age < 200"
+                "isVis": "demo_schema:interview_age < 200"
             },
             {
                 "isAbout": "activity_path:RCADS-25/RCADS-25_schema",
@@ -80,7 +80,7 @@
                 "prefLabel": {
                     "en": "RCADS-25"
                 },
-                "isVis": "demo_schema: interview_age < 200"
+                "isVis": "demo_schema:interview_age < 200"
             },
             {
                 "isAbout": "activity_path:ThankYou/ThankYou_schema",
