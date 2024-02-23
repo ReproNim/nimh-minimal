@@ -20,6 +20,13 @@
     "ui": {
         "addProperties": [
             {
+                "isAbout": "../activities/demo/demo_schema",
+                "variableName": "demo_schema",
+                "prefLabel": {
+                    "en": "Demographics"
+                }
+            },
+            {
                 "isAbout": "activity_path:DSM-5_A/DSM5_crosscutting_adult_schema",
                 "variableName": "DSM5_crosscutting_adult_schema",
                 "prefLabel": {
@@ -84,6 +91,7 @@
             }
         ],
         "order": [
+            "../activities/demo/demo_schema",
             "activity_path:DSM-5_A/DSM5_crosscutting_adult_schema",
             "activity_path:WHODAS12/WHODAS12_schema",
             "activity_path:PHQ-9/PHQ9_schema",
