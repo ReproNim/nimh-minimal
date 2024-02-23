@@ -103,7 +103,8 @@
         ],
         "shuffle": false,
         "allow": [
-            "reproschema:AllowExport"
+            "reproschema:AllowExport",
+	    "reproschema:AutoAdvance"
         ]
     }
 }
