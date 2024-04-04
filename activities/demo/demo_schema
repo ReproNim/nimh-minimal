@@ -2,7 +2,7 @@
     "@context": [
         "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
         {
-            "demo": "https://raw.githubusercontent.com/ReproNim/reproschema-library/9be140d0297ae0671d50466448ae67dea86d3bfd/activities/NDA/items/"
+            "demo": "https://raw.githubusercontent.com/ReproNim/reproschema-library/80867e36fb2c00563290486bf3f3bbeb3198f5cb/activities/NDA/items/"
         }
         ],
     "@type": "reproschema:Activity",
