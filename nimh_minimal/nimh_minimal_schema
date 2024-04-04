@@ -64,7 +64,7 @@
                 "prefLabel": {
                     "en": "DSM5 Parent"
                 },
-                "isVis": false
+                "isVis": "demo_schema.interview_age >= 18"
             },
             {
                 "isAbout": "activity_path:DSM-5_Y/DSM5_crosscutting_youth_schema",
