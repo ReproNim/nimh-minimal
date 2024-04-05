@@ -32,7 +32,7 @@
                 "prefLabel": {
                     "en": "DSM5 Adult"
                 },
-                "isVis": true
+                "isVis": "Number(demo_schema.interview_age) >= 12*18"
             },
 	        {
                 "variableName": "WHODAS12_schema",
@@ -40,7 +40,7 @@
                 "prefLabel": {
                     "en": "WHODAS12"
                 },
-                "isVis": true
+                "isVis": "Number(demo_schema.interview_age) >= 12*18"
             },
 	        {
                 "variableName": "PHQ9_schema",
@@ -48,7 +48,7 @@
                 "prefLabel": {
                     "en": "PHQ9"
                 },
-                "isVis": true
+                "isVis": "Number(demo_schema.interview_age) >= 12*18"
             },
 	        {
                 "variableName": "GAD7_schema",
@@ -56,7 +56,7 @@
                 "prefLabel": {
                     "en": "GAD7"
                 },
-                "isVis": true
+                "isVis": "Number(demo_schema.interview_age) >= 12*18"
             },
             {
                 "isAbout": "activity_path:dsm_5_parent_guardian_rated_level_1_crosscutting_s/dsm_5_parent_guardian_rated_level_1_crosscutting_s_schema",
