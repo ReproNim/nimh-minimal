@@ -20,19 +20,19 @@ jobs:
         echo "PROTOCOL_SLUG is set to $PROTOCOL_SLUG"    
     
     - name: Check out repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         fetch-depth: 0  # Fetches the entire history for comprehensive CI checks
 
     - name: Set up Node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v4
       with:
         node-version: '14.x' # Updated to a more recent LTS version
 
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.9' # Updated to Python 3.9
+        python-version: '3.10' # Updated to Python 3.9
 
     - name: Install system dependencies
       run: sudo apt-get install jq
