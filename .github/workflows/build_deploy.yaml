@@ -27,7 +27,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '14.x' # Updated to a more recent LTS version
+        node-version: '21.x' # Updated to a more recent LTS version
 
     - name: Set up Python
       uses: actions/setup-python@v4
