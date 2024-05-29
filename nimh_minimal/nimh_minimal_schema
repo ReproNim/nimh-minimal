@@ -96,9 +96,11 @@
             "activity_path:WHODAS12/WHODAS12_schema",
             "activity_path:PHQ-9/PHQ9_schema",
             "activity_path:GAD7/GAD7_schema",
-            "activity_path:dsm_5_parent_guardian_rated_level_1_crosscutting_s/dsm_5_parent_guardian_rated_level_1_crosscutting_s_schema",
+            "activity_path:dsm_5_parent_guardian_rated_level_1_crosscutting_s/dsm_5_parent_guardian_rated_level_1_crosscutting_s_schema_first_19",
+            "activity_path:dsm_5_parent_guardian_rated_level_1_crosscutting_s/dsm_5_parent_guardian_rated_level_1_crosscutting_s_schema_20_to_25",
             "activity_path:DSM-5_Y/DSM5_crosscutting_youth_schema",
-            "activity_path:RCADS-25/RCADS-25_schema",
+            "activity_path:RCADS-25-C/RCADS25_caregiver_administered_schema",
+            "activity_path:RCADS-25-Y/RCADS25_youth_administered_schema",
             "activity_path:ThankYou/ThankYou_schema"
         ],
         "shuffle": false,
