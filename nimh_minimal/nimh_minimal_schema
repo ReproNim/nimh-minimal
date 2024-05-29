@@ -59,10 +59,18 @@
                 "isVis": "Number(demo_schema.interview_age) >= 12*18"
             },
             {
-                "isAbout": "activity_path:dsm_5_parent_guardian_rated_level_1_crosscutting_s/dsm_5_parent_guardian_rated_level_1_crosscutting_s_schema",
-                "variableName": "dsm_5_parent_guardian_rated_level_1_crosscutting_s_schema",
+                "isAbout": "activity_path:dsm_5_parent_guardian_rated_level_1_crosscutting_s/dsm_5_parent_guardian_rated_level_1_crosscutting_s_schema_first_19",
+                "variableName": "dsm_5_parent_guardian_rated_level_1_crosscutting_s_schema_first_19",
                 "prefLabel": {
-                    "en": "DSM5 Parent"
+                    "en": "DSM5 Parent first 19"
+                },
+                "isVis": "Number(demo_schema_interview_age) > 12*6 && Number(demo_schema_interview_age) < 12*18"
+            },
+            {
+                "isAbout": "activity_path:dsm_5_parent_guardian_rated_level_1_crosscutting_s/dsm_5_parent_guardian_rated_level_1_crosscutting_s_schema_20_to_25",
+                "variableName": "dsm_5_parent_guardian_rated_level_1_crosscutting_s_schema_20_to_25",
+                "prefLabel": {
+                    "en": "DSM5 Parent 20 to 25"
                 },
                 "isVis": "Number(demo_schema_interview_age) > 12*6 && Number(demo_schema_interview_age) < 12*18"
             },
@@ -75,10 +83,18 @@
                 "isVis": false
             },
             {
-                "isAbout": "activity_path:RCADS-25/RCADS-25_schema",
-                "variableName": "RCADS-25_schema",
+                "isAbout": "activity_path:RCADS-25-C/RCADS25_caregiver_administered_schema",
+                "variableName": "RCADS25_caregiver_administered_schema",
                 "prefLabel": {
-                    "en": "RCADS-25"
+                    "en": "RCADS-25 Caregiver"
+                },
+                "isVis": "Number(demo_schema_interview_age) > 12*4 && Number(demo_schema_interview_age) < 12*18"
+            },
+            {
+                "isAbout": "activity_path:RCADS-25-Y/RCADS25_youth_administered_schema",
+                "variableName": "RCADS25_youth_administered_schema",
+                "prefLabel": {
+                    "en": "RCADS-25 Youth"
                 },
                 "isVis": "Number(demo_schema_interview_age) > 12*4 && Number(demo_schema_interview_age) < 12*18"
             },
