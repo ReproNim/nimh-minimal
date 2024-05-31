@@ -2,7 +2,7 @@
     "@context": [
         "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
         {
-            "activity_path": "https://raw.githubusercontent.com/ReproNim/reproschema-library/80867e36fb2c00563290486bf3f3bbeb3198f5cb/activities/"
+            "activity_path": "https://raw.githubusercontent.com/ReproNim/reproschema-library/enh/rc4/a23a13875c7262c0bd0d77bd90c1ec296c6d1116/activities/"
         }
         ],
     "@type": "reproschema:Protocol",
@@ -59,10 +59,18 @@
                 "isVis": "Number(demo_schema.interview_age) >= 12*18"
             },
             {
-                "isAbout": "activity_path:dsm_5_parent_guardian_rated_level_1_crosscutting_s/dsm_5_parent_guardian_rated_level_1_crosscutting_s_schema",
-                "variableName": "dsm_5_parent_guardian_rated_level_1_crosscutting_s_schema",
+                "isAbout": "activity_path:dsm_5_parent_guardian_rated_level_1_crosscutting_s/dsm_5_parent_guardian_rated_level_1_crosscutting_s_schema_first_19",
+                "variableName": "dsm_5_parent_guardian_rated_level_1_crosscutting_s_schema_first_19",
                 "prefLabel": {
-                    "en": "DSM5 Parent"
+                    "en": "DSM5 Parent first 19"
+                },
+                "isVis": "Number(demo_schema_interview_age) > 12*6 && Number(demo_schema_interview_age) < 12*18"
+            },
+            {
+                "isAbout": "activity_path:dsm_5_parent_guardian_rated_level_1_crosscutting_s/dsm_5_parent_guardian_rated_level_1_crosscutting_s_schema_20_to_25",
+                "variableName": "dsm_5_parent_guardian_rated_level_1_crosscutting_s_schema_20_to_25",
+                "prefLabel": {
+                    "en": "DSM5 Parent 20 to 25"
                 },
                 "isVis": "Number(demo_schema_interview_age) > 12*6 && Number(demo_schema_interview_age) < 12*18"
             },
@@ -72,13 +80,21 @@
                 "prefLabel": {
                     "en": "DSM5 Youth"
                 },
-                "isVis": false
+                "isVis": "Number(demo_schema_interview_age) > 12*6 && Number(demo_schema_interview_age) < 12*18"
             },
             {
-                "isAbout": "activity_path:RCADS-25/RCADS-25_schema",
-                "variableName": "RCADS-25_schema",
+                "isAbout": "activity_path:RCADS-25-C/RCADS25_caregiver_administered_schema",
+                "variableName": "RCADS25_caregiver_administered_schema",
                 "prefLabel": {
-                    "en": "RCADS-25"
+                    "en": "RCADS-25 Caregiver"
+                },
+                "isVis": "Number(demo_schema_interview_age) > 12*4 && Number(demo_schema_interview_age) < 12*18"
+            },
+            {
+                "isAbout": "activity_path:RCADS-25-Y/RCADS25_youth_administered_schema",
+                "variableName": "RCADS25_youth_administered_schema",
+                "prefLabel": {
+                    "en": "RCADS-25 Youth"
                 },
                 "isVis": "Number(demo_schema_interview_age) > 12*4 && Number(demo_schema_interview_age) < 12*18"
             },
@@ -96,9 +112,11 @@
             "activity_path:WHODAS12/WHODAS12_schema",
             "activity_path:PHQ-9/PHQ9_schema",
             "activity_path:GAD7/GAD7_schema",
-            "activity_path:dsm_5_parent_guardian_rated_level_1_crosscutting_s/dsm_5_parent_guardian_rated_level_1_crosscutting_s_schema",
+            "activity_path:dsm_5_parent_guardian_rated_level_1_crosscutting_s/dsm_5_parent_guardian_rated_level_1_crosscutting_s_schema_first_19",
+            "activity_path:dsm_5_parent_guardian_rated_level_1_crosscutting_s/dsm_5_parent_guardian_rated_level_1_crosscutting_s_schema_20_to_25",
             "activity_path:DSM-5_Y/DSM5_crosscutting_youth_schema",
-            "activity_path:RCADS-25/RCADS-25_schema",
+            "activity_path:RCADS-25-C/RCADS25_caregiver_administered_schema",
+            "activity_path:RCADS-25-Y/RCADS25_youth_administered_schema",
             "activity_path:ThankYou/ThankYou_schema"
         ],
         "shuffle": false,
