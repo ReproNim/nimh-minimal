@@ -1,16 +1,16 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/main/releases/1.0.0/reproschema",
         {
-            "activity_path": "https://raw.githubusercontent.com/ReproNim/reproschema-library/a23a13875c7262c0bd0d77bd90c1ec296c6d1116/activities/"
+            "activity_path": "https://raw.githubusercontent.com/ReproNim/reproschema-library/25162084b702505cd7b6729ab569bd17c144213b/activities/"
         }
         ],
     "@type": "reproschema:Protocol",
     "@id": "nimh_minimal_schema",
     "prefLabel": "NIMH collection",
     "description": "Minimal list of data collection instruments that would be ideal for use by all mental health researchers conducting clinical research to facilitate and harmonize mental health data collection.",
-    "schemaVersion": "1.0.0-rc4",
-    "version": "0.0.1",
+    "schemaVersion": "1.0.0",
+    "version": "0.0.2",
     "landingPage": [
         {
             "@id": "README.md",

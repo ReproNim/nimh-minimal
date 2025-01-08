@@ -1,8 +1,8 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/main/releases/1.0.0/reproschema",
         {
-            "demo": "https://raw.githubusercontent.com/ReproNim/reproschema-library/80867e36fb2c00563290486bf3f3bbeb3198f5cb/activities/NDA/items/"
+            "demo": "https://raw.githubusercontent.com/ReproNim/reproschema-library/25162084b702505cd7b6729ab569bd17c144213b/activities/NDA/items/"
         }
         ],
     "@type": "reproschema:Activity",
@@ -10,7 +10,7 @@
     "prefLabel": {"en": "Demographics" },
     "description": "Demographic information",
     "preamble": " ",
-    "schemaVersion": "1.0.0-rc4",
+    "schemaVersion": "1.0.0",
     "version": "0.0.1",
     "ui": {
         "addProperties": [
